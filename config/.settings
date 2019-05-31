@@ -1,0 +1,31 @@
+{
+    "projectName": "tdtm-mutable-example",
+    "username": "roger+tdtm.upgrade@dodgelabs.com",
+    "id": "c4f4a810-83dd-11e9-9659-e742871643bd",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://na91.salesforce.com",
+    "workspace": "/Users/rogermitchell/Desktop",
+    "subscription": [
+        "ApexClass",
+        "ApexPage",
+        "ApexTrigger",
+        "AuraDefinitionBundle",
+        "BrandingSet",
+        "ContentAsset",
+        "CustomApplication",
+        "CustomLabels",
+        "CustomObject",
+        "CustomTab",
+        "Document",
+        "FlexiPage",
+        "GlobalValueSet",
+        "Layout",
+        "QuickAction",
+        "Report",
+        "ReportType",
+        "StaticResource",
+        "Workflow"
+    ]
+}
