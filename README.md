@@ -4,9 +4,13 @@
 
 As a user, we expect every Account has an accurate value in the `NumberOfEmployees`, so whenever a Contact is created, we need to increment this field by 1.
 
+While this may seem like a trivial use case, it demonstrates how the TDTM framework cannot be reliably used by subscriber developers, as a conflict will arise if the subscriber's code extending TDTM's `DmlWrapper` will contain a record that NPSP has already staged for update.
+
 NOTE: We also assume that all of NPSP's standard Trigger Handler records are configured and active in the org.
 
 ## Using `TDTM_Runnable`
+
+This has been implemented with the class [`CON_SetFieldsOnAccount_TDTM`](src/classes/CON_SetFieldsOnAccount_TDTM.cls).
 
 1. Ensure that your org has a `Trigger_Handler__c` record set up for the class that implements `TDTM_Runnable` that attempts to fulfill this requirement.
 	```apex
@@ -32,6 +36,8 @@ NOTE: We also assume that all of NPSP's standard Trigger Handler records are con
 	> Apex trigger TDTM_Contact caused an unexpected exception, contact your administrator: TDTM_Contact: execution of AfterInsert caused by: System.ListException: Duplicate id in list: 0012E00001t2sSjQAI: Class.UTIL_DMLService.updateRecords: line 202, column 1
 
 ## Using `TDTM_RunnableMutable`
+
+This has been implemented with the class [`CON_SetFieldsOnAccount_TDTM_Mutable`](src/classes/CON_SetFieldsOnAccount_TDTM_Mutable.cls).
 
 1. Ensure that your org has a `Trigger_Handler__c` record set up for the class that implements `TDTM_RunnableMutable`, and also that the previously created Trigger Handler for the class implementing `TDTM_Runnable` is no longer active.
 	```apex
