@@ -1,1 +1,16 @@
-{}
+{
+    "CON_SetFieldsOnAccount_TDTM.cls": {
+        "createdById": "0052E00000IHceJQAT",
+        "createdByName": "Roger Mitchell",
+        "createdDate": "2019-05-31T19:56:41.000Z",
+        "fileName": "unpackaged/classes/CON_SetFieldsOnAccount_TDTM.cls",
+        "fullName": "CON_SetFieldsOnAccount_TDTM",
+        "id": "01p2E00000BOa9gQAD",
+        "lastModifiedById": "0052E00000IHceJQAT",
+        "lastModifiedByName": "Roger Mitchell",
+        "lastModifiedDate": "2019-05-31T20:05:59.000Z",
+        "manageableState": "unmanaged",
+        "type": "ApexClass",
+        "mmState": "clean"
+    }
+}
